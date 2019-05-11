@@ -1,18 +1,15 @@
 $(function() {
+    console.log( "ready!" );
 
-  let city = $("#cityType").val();
-  let backgroundImage;
+    let city;
 
-  $("#submitBtn").click(displayPic);
-
-  function displayPic() {
-    if (city === "New York City" || "NYC" || "New York") {
-      $("body").attr('class', 'nyc');
-
-    } else if (city === "San Francisco" || "SF" || "Bay Area") {
-
-  };
+    $("#submit-btn").click(changeBackground);
 
 
+    function changeBackground () {
+      console.log("clicked");
+      let city = $("#city-type").val();
+      console.log(city);
+    }
 
 });
